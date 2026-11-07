@@ -11,7 +11,13 @@ Dependencies
     customtkinter
     CTkColorPicker
 
-Make sure to install these dependencies before running the application.
+Install them with:
+
+    pip install -r requirements.txt
+
+tkinter comes with Python, so it isn't in requirements.txt (pip can't install it). On some Linux distributions you'll need the system package instead, e.g. `sudo apt install python3-tk`.
+
+pyzbar needs the zbar library. The Windows wheels include it; on macOS run `brew install zbar`, and on Debian/Ubuntu run `sudo apt install libzbar0`.
 
 Usage
 
